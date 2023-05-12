@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 routes(app);
 
 dbSetup.connect(); // Crea tablas e inserta datos de prueba.
-//dbSetup.handleSeeder(); //Seeder
+dbSetup.handleSeeder(); //Seeder
 
 app.listen(APP_PORT, () => {
   console.log(`\n[Express] Servidor corriendo en el puerto ${APP_PORT}.`);

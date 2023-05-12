@@ -13,7 +13,7 @@ const userSchema = new Schema({
 });
 
 userSchema.plugin(beautifyUnique);
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model('User', userSchema, 'users');
 
 module.exports = {
   userSchema,

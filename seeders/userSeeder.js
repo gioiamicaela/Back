@@ -10,7 +10,7 @@ module.exports = async () => {
     new User({
       firstname: 'ejemplo',
       lastname: 'user',
-      email: 'user@swfitness.com',
+      email: 'user@up.com',
       password: encryptedPassword,
     }),
   ]);
